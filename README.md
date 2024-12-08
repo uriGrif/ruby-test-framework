@@ -24,6 +24,17 @@ class MiSuiteDeTests
   end
 end
 
+# Correr los tests
+
+# Corre todos los tests de todas las suites en contexto
+> TADsPec.testear
+
+# Corre todos los tests de la suite MiSuite
+> TADsPec.testear MiSuite
+
+# Corre los tests :testear_que_una_cosa, :testear_que_otra_cosa y cualquier otro test de la suite MiSuite cuyo nombre se pase por parámetro
+> TADsPec.testear MiSuite, :una_cosa, :otra_cosa, etc...
+
 # Dentro de un test, se pueden realizar aserciones utilizando el metodo "deberia" en cualquier objeto,
 # pasando como parametro el tipo de asercion, y el valor de comparacion
 
